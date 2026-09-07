@@ -10,5 +10,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Afficher un message
-        run: echo "Mon premier pipeline fonctionne"
+  - name: Recuperer le code
+    uses: actions/checkout@v4
+
+  - name: Afficher les fichiers
+    run: ls -la
+
+  - name: Afficher un message
+    run: echo "Mon premier pipeline fonctionne"
