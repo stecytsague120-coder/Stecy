@@ -1,0 +1,14 @@
+name: Mon premier pipeline
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Afficher un message
+        run: echo "Mon premier pipeline fonctionne"
