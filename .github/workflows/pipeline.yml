@@ -23,3 +23,6 @@ jobs:
 
       - name: Lancer les tests
         run: pytest
+
+      - name: Construire image Docker
+        run: docker build -t stecy-cicd:v1 .
